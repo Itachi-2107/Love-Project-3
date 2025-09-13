@@ -67,7 +67,7 @@
         <div>
           <div class="title"><span class="typing" id="type1"></span><span class="cursor" id="cur1"></span></div>
           <div style="height:18px"></div>
-          <img id="shot1" class="shot" src="images/s1.png" alt="first chat screenshot">
+          <img id="shot1" class="shot" src="Screenshot_20250913_130934.jpg" alt="first chat screenshot">
           <div class="caption">I’ll never forget that “Hey, I know you”… and how it changed everything ❤️</div>
         </div>
       </div>
@@ -112,7 +112,7 @@ nextBtn.addEventListener('click',()=>{if(slideIndex<totalSlides)slideIndex++;els
 
 const type1=document.getElementById('type1');const type2el=document.getElementById('type2');const finalTextEl=document.getElementById('finalText');
 function startType1(){typeText(type1,'Do you remember the day we met?',35,()=>{document.getElementById('cur1').style.display='none';});}
-function startType2(){document.getElementById('cur2').style.display='inline-block';typeText(type2el,'And how could we ever forget this day... full of different emotions 🥹❤️',30,()=>{document.getElementById('cur2').style.display='none';});}
+function startType2(){document.getElementById('cur2').style.display='inline-block';typeText(type2el,'And how could we ever forget this day... full of different emotions ❤️',30,()=>{document.getElementById('cur2').style.display='none';});}
 
 function spawnFloatingHeart(){const heart=document.createElement('div');heart.className='float-heart';heart.innerText='💖';heart.style.left=(10+Math.random()*80)+'%';heart.style.bottom='-10vh';heart.style.animationDuration=(4+Math.random()*6)+'s';document.body.appendChild(heart);setTimeout(()=>heart.remove(),11000);}setInterval(spawnFloatingHeart,600);
 
